@@ -28,6 +28,13 @@
 
                const item = {};
                item.img = `img-cart${partPath}`;
+               
+
+               let name = event.target.parentElement.parentElement.nextElementSibling;
+               console.log(name); 
+
+
+
                console.log(item);
         }    
         });
