@@ -21,7 +21,14 @@
         if(event.target.parentElement.classList.contains("store-item-icon")) {
             
                 //console.log(event.target.parentElement.parentElement.previousElementSibling);
-                console.log(event.target.parentElement.previousElementSibling.src);
+                let fullPath = event.target.parentElement.previousElementSibling.src;
+                console.log(fullPath);
+                let pos = fullPath.indexOf("img") + 3;
+               let partPath = fullPath.slice(pos)
+
+               const item = {};
+               item.img = `img-cart${partPath}`;
+               console.log(item);
         }    
         });
     });
