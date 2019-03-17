@@ -89,6 +89,8 @@
                 return total;
         }, 0);
         const finalMoney = totalMoney.toFixed(2);
-        console.log(finalMoney);
+        document.getElementById('cart-total').textContent = finalMoney;
+        document.querySelector('.item-total').textContent = finalMoney;
+        document.getElementById('item-count').textContent = total.length;
     }
 })();
