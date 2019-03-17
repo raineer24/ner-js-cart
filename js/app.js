@@ -38,9 +38,29 @@
                
                let finalPrice = price.slice(1).trim();
                item.price = finalPrice;
-               console.log(item.price);
-               console.log(finalPrice); 
-
+               
+               const cartItem = document.createElement('div');
+               cartItem.classList(
+                   'cart-item','d-flex', 
+                   'justify-content-between', 
+                   'text-capitalize', 
+                   'my-3' 
+                   );
+                 cartItem.innerHTML =   
+                `
+                <div class="cart-item d-flex justify-content-between text-capitalize my-3">
+                  <img src="${item.img}" class="img-fluid rounded-circle" id="item-img" alt="">
+                  <div class="item-text">
+      
+                    <p id="cart-item-title" class="font-weight-bold mb-0">${item.name}</p>
+                    <span>$</span>
+                    <span id="cart-item-price" class="cart-item-price" class="mb-0">${item.price}</span>
+                  </div>
+                  <a href="#" id='cart-item-remove' class="cart-item-remove">
+                    <i class="fas fa-trash"></i>
+                  </a>
+                </div>
+               `;
 
 
                console.log(item);
