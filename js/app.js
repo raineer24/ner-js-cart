@@ -69,6 +69,7 @@
 
                cart.insertBefore(cartItem, total);
                alert('item added to the cart');
+               showTotals();
         }    
         });
     });
