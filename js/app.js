@@ -40,7 +40,7 @@
                item.price = finalPrice;
                
                const cartItem = document.createElement('div');
-               cartItem.classList(
+               cartItem.classList.add(
                    'cart-item','d-flex', 
                    'justify-content-between', 
                    'text-capitalize', 
@@ -62,8 +62,13 @@
                 </div>
                `;
 
+              //selectCart
+              const cart = document.getElementById('cart');
+              const total = document.querySelector('.cart-total-container'); 
 
-               console.log(item);
+
+               cart.insertBefore(cartItem, total);
+               alert('item added to the cart');
         }    
         });
     });
