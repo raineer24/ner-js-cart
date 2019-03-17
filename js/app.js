@@ -73,5 +73,8 @@
         }    
         });
     });
-
+    // show totals
+    function showTotals() {
+        console.log('hello');
+    }
 })();
