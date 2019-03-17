@@ -33,8 +33,13 @@
 
                let name = event.target.parentElement.parentElement.nextElementSibling.children[0].children[0].textContent;
                item.name = name;
-
-               console.log(name); 
+               let price = event.target.parentElement.parentElement.nextElementSibling.children[0].children[1].textContent; 
+               
+               
+               let finalPrice = price.slice(1).trim();
+               item.price = finalPrice;
+               console.log(item.price);
+               console.log(finalPrice); 
 
 
 
