@@ -88,7 +88,7 @@
                 total += item;
                 return total;
         }, 0);
-
-        console.log(totalMoney);
+        const finalMoney = totalMoney.toFixed(2);
+        console.log(finalMoney);
     }
 })();
