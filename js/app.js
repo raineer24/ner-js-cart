@@ -79,13 +79,16 @@
         const items = document.querySelectorAll('.cart-item-price');
 
         items.forEach(function(item) {
-          total.push(item.textContent);  
-          console.log(item.textContent);
+          total.push(parseFloat(item.textContent));  
+          
         });
-        //console.log(total);
+        console.log(total);
 
         const totalMoney = total.reduce(function(total, item){
+                total += item;
+                return total;
+        }, 0);
 
-        }, 0)
+        console.log(totalMoney);
     }
 })();
