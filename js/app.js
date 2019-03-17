@@ -75,6 +75,13 @@
     });
     // show totals
     function showTotals() {
-        console.log('hello');
+        const total = [];
+        const items = document.querySelectorAll('.cart-item-price');
+
+        items.forEach(function(item) {
+          total.push(item.textContent);  
+          console.log(item.textContent);
+        });
+        console.log(total);
     }
 })();
