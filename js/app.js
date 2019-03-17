@@ -82,6 +82,10 @@
           total.push(item.textContent);  
           console.log(item.textContent);
         });
-        console.log(total);
+        //console.log(total);
+
+        const totalMoney = total.reduce(function(total, item){
+
+        }, 0)
     }
 })();
