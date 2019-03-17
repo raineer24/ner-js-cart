@@ -30,7 +30,8 @@
                item.img = `img-cart${partPath}`;
                
 
-               let name = event.target.parentElement.parentElement.nextElementSibling;
+               let name = event.target.parentElement.parentElement.nextElementSibling.children[0].children[0].textContent;
+               
                console.log(name); 
 
 
