@@ -27,11 +27,13 @@
                let partPath = fullPath.slice(pos)
 
                const item = {};
+               console.log(`typeof ${typeof item}`);
                item.img = `img-cart${partPath}`;
                
 
                let name = event.target.parentElement.parentElement.nextElementSibling.children[0].children[0].textContent;
-               
+               item.name = name;
+
                console.log(name); 
 
 
